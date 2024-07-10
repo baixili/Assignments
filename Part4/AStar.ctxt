@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=AStar
+comment1.params=start\ goal
+comment1.target=java.util.List\ findShortestPath(Stop,\ Stop)
+comment1.text=\r\n\ Finds\ the\ shortest\ path\ between\ two\ stops\r\n
+comment2.params=start\ goal\ backpointers
+comment2.target=java.util.List\ reconstructPath(Stop,\ Stop,\ java.util.Map)
+comment2.text=\r\n\ This\ method\ is\ used\ to\ find\ all\ the\ path\ through\ the\ backpointer\r\n\ @param\ start\r\n\ @param\ goal\r\n\ @param\ backpointers\r\n\ @return\ path\r\n
+numComments=3

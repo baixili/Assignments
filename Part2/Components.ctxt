@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Components
+comment1.params=graph
+comment1.target=java.util.Map\ findComponents(Graph)
+comment2.params=node\ nodeList\ visited
+comment2.target=void\ forwardVisit(Stop,\ java.util.List,\ java.util.Set)
+comment2.text=\r\n\ This\ method\ is\ used\ to\ add\ all\ the\ forward\ node\ can\ be\ reached\ form\ one\ node\ to\ the\ nodeList\r\n\ @param\ node\r\n\ @param\ nodeList\r\n\ @param\ visited\r\n
+comment3.params=node\ componentNum\ components
+comment3.target=void\ backwardVisit(Stop,\ int,\ java.util.Map)
+comment3.text=\r\n\ This\ mehtod\ is\ used\ to\ check\ the\ stops\ could\ be\ reached\ backward\ through\ a\ node\r\n\ @param\ node\r\n\ @param\ componentNum\r\n
+numComments=4
