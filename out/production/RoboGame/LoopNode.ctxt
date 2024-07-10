@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=LoopNode
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ LoopNode\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=scanner
+comment1.target=ProgramNode\ parseLoop(java.util.Scanner)
+numComments=2

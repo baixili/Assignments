@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=World
+comment0.text=Simulation\ of\ the\ robots\ in\ their\ world
+comment1.params=
+comment1.target=World()
+comment2.params=
+comment2.target=void\ reset()
+comment2.text=\r\n\ This\ world\ can\ no\ longer\ be\ used\ after\ this\ call.\r\n
+comment3.params=
+comment3.target=java.util.Set\ getAvailableFuel()
+comment4.params=
+comment4.target=void\ updateWorld()
+comment5.params=id\ code
+comment5.target=void\ loadRobotProgram(int,\ java.io.File)
+comment6.params=
+comment6.target=void\ start()
+comment7.params=id
+comment7.target=Robot\ getRobot(int)
+comment8.params=robot
+comment8.target=Robot\ getOtherRobot(Robot)
+comment8.text=Returns\ the\ opponent\ robot\ of\ the\ argument
+comment9.params=definitely
+comment9.target=void\ addFuel(boolean)
+numComments=10

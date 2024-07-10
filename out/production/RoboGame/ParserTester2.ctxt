@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ParserTester2
+comment0.text=\r\n\ Tests\ the\ parser\:\r\n\ Has\ GOOD\ (valid)\ and\ BAD\ (invalid)\ test\ cases\r\n\ Each\ test\ case\ has\ the\ program\ and\ a\ brief\ description\ of\ what\ it\ is\ testing.\r\n\ parserTester2\ runs\ the\ parser\ on\ the\ test\ program,\ checking\ whether\ it\r\n\ throws\ an\ exception,\ returns\ a\ parse\ tree,\ or\ returns\ null\ (shouldn't\ happen).\r\n\ It\ prints\ the\ test\ program.\r\n\ If\ the\ test\ case\ is\ valid\ and\ the\ parser\ returns\ a\ tree,\ or\ if\r\n\ \ the\ test\ case\ is\ invalid\ and\ the\ parser\ throws\ an\ exception,\ it\ prints\ "OK".\r\n\ otherwise\ it\ prints\ "BAD"\r\n\ If\ the\ parser\ returns\ a\ tree,\ then\ it\ prints\ out\ that\ program\ on\ one\ line.\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ For\ testing\ a\ parser\ without\ requiring\ the\ world\ or\ the\ game\:\r\n
+numComments=2

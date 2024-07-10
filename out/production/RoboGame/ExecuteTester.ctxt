@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=ExecuteTester
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ For\ testing\ the\ execute()\ methods\ from\ your\ parser\ without\ requiring\ the\ world\ or\ the\ game\:\r\n\ Calling\ main\ with\ no\ arguments\ will\ ask\ the\ user\ to\ select\ a\ stage\r\n\ and\ will\ then\ test\ programs\ for\ that\ stage\ \r\n
+comment2.params=program\ ast\ expected
+comment2.target=void\ testProgram(java.lang.String,\ ProgramNode,\ java.lang.String)
+comment2.text=\r\n\r\n\ Tests\ the\ parser\ on\ a\ single\ program\r\n
+comment3.params=actual\ expected\ program
+comment3.target=void\ compare(java.util.List,\ java.lang.String,\ java.lang.String)
+numComments=4

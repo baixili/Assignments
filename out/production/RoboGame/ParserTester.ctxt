@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ParserTester
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment1.text=\r\n\ For\ testing\ your\ parser\ without\ requiring\ the\ world\ or\ the\ game\:\r\n\ Calling\ main\ with\ no\ arguments\ will\ repeatedly\ ask\ the\ user\r\n\ to\ choose\ a\ program\ file\ and\ will\ then\ attempt\ to\ parse\ it\ and\ print\ it.\r\n\r\n\ Calling\ main\ with\ arguments\ will\ treat\ each\ argument\ as\ a\ file\ name\r\n\ and\ will\ attempt\ to\ parse\ and\ print\ each\ file.\r\n
+comment2.params=parser\ file
+comment2.target=void\ testParserOnFile(Parser,\ java.io.File)
+comment2.text=\r\n\ Tests\ the\ parser\ on\ a\ single\ file.\r\n
+numComments=3

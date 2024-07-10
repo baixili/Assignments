@@ -1,0 +1,109 @@
+#BlueJ class context
+comment0.target=Parser
+comment0.text=\r\n\ See\ assignment\ handout\ for\ the\ grammar.\r\n\ You\ need\ to\ implement\ the\ parse(..)\ method\ and\ all\ the\ rest\ of\ the\ parser.\r\n\ There\ are\ several\ methods\ provided\ for\ you\:\r\n\ -\ several\ utility\ methods\ to\ help\ with\ the\ parsing\r\n\ See\ also\ the\ TestParser\ class\ for\ testing\ your\ code.\r\n
+comment1.params=s
+comment1.target=ProgramNode\ parse(java.util.Scanner)
+comment1.text=\r\n\ The\ top\ of\ the\ parser,\ which\ is\ handed\ a\ scanner\ containing\r\n\ the\ text\ of\ the\ program\ to\ parse.\r\n\ Returns\ the\ parse\ tree.\r\n
+comment10.params=scanner
+comment10.target=ProgramNode\ parseTurnL(java.util.Scanner)
+comment10.text=turn\ left
+comment11.params=scanner
+comment11.target=ProgramNode\ parseTurnR(java.util.Scanner)
+comment11.text=turn\ right
+comment12.params=scanner
+comment12.target=ProgramNode\ parseTakeFuel(java.util.Scanner)
+comment12.text=take\ fuel
+comment13.params=scanner
+comment13.target=ProgramNode\ parseWait(java.util.Scanner)
+comment13.text="wait"\ [\ "("\ EXPR\ ")"]
+comment14.params=scanner
+comment14.target=ProgramNode\ parseTurnAround(java.util.Scanner)
+comment14.text=turn\ around
+comment15.params=scanner
+comment15.target=ProgramNode\ parseShieldOn(java.util.Scanner)
+comment15.text=shield\ on
+comment16.params=scanner
+comment16.target=ProgramNode\ parseShieldOff(java.util.Scanner)
+comment16.text=shield\ off
+comment17.params=scanner
+comment17.target=ProgramNode\ parseAct(java.util.Scanner)
+comment17.text=\ "move"\ [\ "("\ EXPR\ ")"\ ]\ |\ "turnL"\ |\ "turnR"\ |\ "turnAround"\ |\ \r\n"shieldOn"\ |\ "shieldOff"\ |\ "takeFuel"\ |\ "wait"\ [\ "("\ EXPR\ ")"\ ]
+comment18.params=scanner
+comment18.target=ProgramNode\ parseStmt(java.util.Scanner)
+comment18.text=STMT\ \ \:\:\=\ ACT\ ";"\ |\ LOOP\ |\ IF\ |\ WHILE\ |\ ASSGN\ ";"
+comment19.params=scanner
+comment19.target=ProgramNode\ parseLoop(java.util.Scanner)
+comment19.text=LOOP\ \ \:\:\=\ "loop"\ BLOCK
+comment2.params=message\ s
+comment2.target=void\ fail(java.lang.String,\ java.util.Scanner)
+comment2.text=\r\n\ Report\ a\ failure\ in\ the\ parser.\r\n
+comment20.params=scanner
+comment20.target=ProgramNode\ parseBlock(java.util.Scanner)
+comment20.text=BLOCK\ \:\:\=\ "{"\ STMT+\ "}"
+comment21.params=scanner
+comment21.target=ProgramNode\ parseProg(java.util.Scanner)
+comment21.text=PROG\ \ \:\:\=\ [\ STMT\ ]*
+comment22.params=scanner
+comment22.target=IntNode\ parseFuelLeft(java.util.Scanner)
+comment22.text=fuelLeft
+comment23.params=scanner
+comment23.target=IntNode\ parseOppLR(java.util.Scanner)
+comment23.text=oppLR
+comment24.params=scanner
+comment24.target=IntNode\ parseOppFB(java.util.Scanner)
+comment24.text=oppFB
+comment25.params=scanner
+comment25.target=IntNode\ parseNumBarrels(java.util.Scanner)
+comment25.text=numBarrels
+comment26.params=scanner
+comment26.target=IntNode\ parseBarrelLRNode(java.util.Scanner)
+comment26.text=barrelLR\ \ [\ "("\ EXPR\ ")"\ ]
+comment27.params=scanner
+comment27.target=IntNode\ parseBarrelFBNode(java.util.Scanner)
+comment27.text=barrelFB\ \ [\ "("\ EXPR\ ")"\ ]
+comment28.params=scanner
+comment28.target=IntNode\ parseWallDistanceNode(java.util.Scanner)
+comment28.text=wallDistance
+comment29.params=scanner
+comment29.target=IntNode\ parseSens(java.util.Scanner)
+comment29.text=\ SENS\ \ \:\:\=\ "fuelLeft"\ |\ "oppLR"\ |\ "oppFB"\ |\ "numBarrels"\ |\r\n"barrelLR"\ [\ "("\ EXPR\ ")"\ ]\ |\ "barrelFB"\ [\ "("\ EXPR\ ")"\ ]\ |\ "wallDist"
+comment3.params=p\ message\ s
+comment3.target=java.lang.String\ require(java.lang.String,\ java.lang.String,\ java.util.Scanner)
+comment3.text=\r\n\ Requires\ that\ the\ next\ token\ matches\ a\ pattern\ if\ it\ matches,\ it\ consumes\r\n\ and\ returns\ the\ token,\ if\ not,\ it\ throws\ an\ exception\ with\ an\ error\r\n\ message\r\n
+comment30.params=scanner
+comment30.target=java.lang.String\ parseRelop(java.util.Scanner)
+comment30.text=RELOP\ \:\:\=\ "lt"\ |\ "gt"\ |\ "eq"\ *
+comment31.params=scanner
+comment31.target=java.lang.String\ parseOp(java.util.Scanner)
+comment31.text=OP\:\:\=\ "add"\ |\ "sub"\ |\ "mul"\ |\ "div"
+comment32.params=scanner
+comment32.target=BooleanNode\ parseCond(java.util.Scanner)
+comment32.text=\ COND\ \ \:\:\=\ "and"\ "("\ COND\ ","\ COND\ ")"\ |\ "or"\ "("\ COND\ ","\ COND\ ")"\ |\ "not"\ "("\ COND\ ")"\ \ |\ \r\nRELOP\ "("\ EXPR\ ","\ EXPR\ ")
+comment33.params=scanner
+comment33.target=ProgramNode\ parseIf(java.util.Scanner)
+comment33.text=IF\ \ \ \ \:\:\=\ "if"\ "("\ COND\ ")"\ BLOCK\ [\ "elif"\ \ "("\ COND\ ")"\ \ BLOCK\ ]*\ [\ "else"\ BLOCK\ ]
+comment34.params=scanner
+comment34.target=ProgramNode\ parseWhile(java.util.Scanner)
+comment34.text=WHILE\ \:\:\=\ "while"\ "("\ COND\ ")"\ BLOCK
+comment35.params=scanner
+comment35.target=IntNode\ parseExpr(java.util.Scanner)
+comment35.text=EXPR\ \ \ \:\:\=\ NUM\ |\ SENS\ |\ VAR\ |\ OP\ "("\ EXPR\ ","\ EXPR\ ")"
+comment36.params=scanner
+comment36.target=ProgramNode\ parseAssgn(java.util.Scanner)
+comment36.text=ASSGN\ \:\:\=\ VAR\ "\="\ EXPR
+comment4.params=p\ message\ s
+comment4.target=java.lang.String\ require(java.util.regex.Pattern,\ java.lang.String,\ java.util.Scanner)
+comment5.params=p\ message\ s
+comment5.target=int\ requireInt(java.lang.String,\ java.lang.String,\ java.util.Scanner)
+comment5.text=\r\n\ Requires\ that\ the\ next\ token\ matches\ a\ pattern\ (which\ should\ only\ match\ a\r\n\ number)\ if\ it\ matches,\ it\ consumes\ and\ returns\ the\ token\ as\ an\ integer\r\n\ if\ not,\ it\ throws\ an\ exception\ with\ an\ error\ message\r\n
+comment6.params=p\ message\ s
+comment6.target=int\ requireInt(java.util.regex.Pattern,\ java.lang.String,\ java.util.Scanner)
+comment7.params=p\ s
+comment7.target=boolean\ checkFor(java.lang.String,\ java.util.Scanner)
+comment7.text=\r\n\ Checks\ whether\ the\ next\ token\ in\ the\ scanner\ matches\ the\ specified\r\n\ pattern,\ if\ so,\ consumes\ the\ token\ and\ return\ true.\ Otherwise\ returns\r\n\ false\ without\ consuming\ anything.\r\n
+comment8.params=p\ s
+comment8.target=boolean\ checkFor(java.util.regex.Pattern,\ java.util.Scanner)
+comment9.params=scanner
+comment9.target=ProgramNode\ parseMove(java.util.Scanner)
+comment9.text="move"\ [\ "("\ EXPR\ ")"\ ]
+numComments=37

@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=RoboGame
+comment1.params=
+comment1.target=RoboGame()
+comment1.text=\r\n\ Set\ up\ the\ interface\ for\ the\ game\r\n
+comment2.params=
+comment2.target=void\ createMenus()
+comment2.text=Make\ the\ menus\ for\ the\ interface
+comment3.params=name\ menu\ action
+comment3.target=javax.swing.JMenuItem\ makeMenuItem(java.lang.String,\ javax.swing.JMenu,\ java.awt.event.ActionListener)
+comment3.text=Utility\ method\ for\ making\ a\ JMenuItem\ on\ a\ JMenu
+comment4.params=name\ menu\ action
+comment4.target=javax.swing.JMenuItem\ makeMenuItem(java.lang.String,\ javax.swing.JMenuBar,\ java.awt.event.ActionListener)
+comment4.text=Utility\ method\ for\ making\ a\ JMenuItem\ on\ a\ JMenuBar
+comment5.params=
+comment5.target=java.io.File\ getCodeFile()
+comment5.text=\r\n\ Ask\ the\ user\ (using\ a\ file\ dialog)\ for\ a\ program\ to\ load.\r\n
+comment6.params=args
+comment6.target=void\ main(java.lang.String[])
+comment6.text=\r\n\ This\ is\ the\ entry\ point\ into\ the\ program.\r\n
+numComments=7
